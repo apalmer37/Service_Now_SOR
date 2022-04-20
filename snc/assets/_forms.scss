@@ -1,0 +1,156 @@
+// HORIZONTAL & VERTICAL FORMS
+// ---------------------------
+
+// Common properties
+// -----------------
+
+.form-search,
+.form-inline,
+.form-horizontal {
+  input,
+  textarea,
+  select,
+  .help-inline,
+  .uneditable-input,
+  .input-prepend,
+  .input-append {
+    display: inline-block;
+
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  // Re-hide hidden elements due to specifity
+  .hide {
+    display: none;
+  }
+}
+
+.form-search label,
+.form-inline label,
+.form-search .btn-group,
+.form-inline .btn-group {
+  display: inline-block;
+}
+// Remove margin for input-prepend/-append
+.form-search .input-append,
+.form-inline .input-append,
+.form-search .input-prepend,
+.form-inline .input-prepend {
+  margin-bottom: 0;
+}
+// Inline checkbox/radio labels (remove padding on left)
+.form-search .radio,
+.form-search .checkbox,
+.form-inline .radio,
+.form-inline .checkbox {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+// Remove float and margin, set to inline-block
+.form-search .radio input[type="radio"],
+.form-search .checkbox input[type="checkbox"],
+.form-inline .radio input[type="radio"],
+.form-inline .checkbox input[type="checkbox"] {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+
+
+// Margin to space out fieldsets
+.control-group {
+  margin-bottom: $baseLineHeight / 2;
+}
+
+// Legend collapses margin, so next element is responsible for spacing
+legend + .control-group {
+  margin-top: $baseLineHeight;
+  -webkit-margin-top-collapse: separate;
+}
+
+// Horizontal-specific styles
+// --------------------------
+
+.form-horizontal {
+  // Increase spacing between groups
+  .control-group {
+    margin-bottom: $baseLineHeight;
+
+  }
+  // Float the labels left
+  .control-label {
+  
+    width: $horizontalComponentOffset - 20;
+    padding-top: 5px;
+    text-align: right;
+  }
+  // Move over all input controls and content
+  .controls {
+    // Super jank IE7 fix to ensure the inputs in .input-append and input-prepend
+    // don't inherit the margin of the parent, in this case .controls
+    *display: inline-block;
+    *padding-left: 20px;
+    margin-left: $horizontalComponentOffset;
+    *margin-left: 0;
+
+    &:first-child {
+      *padding-left: $horizontalComponentOffset;
+    }
+  }
+  // Remove bottom margin on block level help text since that's accounted for on .control-group
+  .help-block {
+    margin-bottom: 0;
+  }
+  // And apply it only to .help-block instances that follow a form control
+  input,
+  select,
+  textarea,
+  .uneditable-input,
+  .input-prepend,
+  .input-append {
+    + .help-block {
+      margin-top: $baseLineHeight / 2;
+    }
+  }
+  // Move over buttons in .form-actions to align with .controls
+  .form-actions {
+    padding-left: $horizontalComponentOffset;
+  }
+}
+
+
+
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    margin-right: 0.5em;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: initial !important;
+    margin: 0 0.5em 0 0 !important;
+
+    &:checked {
+        background-color: #e9ecee;
+        border: 1px solid #adb8c0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+        color: #99a1a7;
+
+        &:after {
+            content: '\2714';
+            font-size: 1em;
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            color: $grayDark;
+
+        }
+    }
+
+            
+}

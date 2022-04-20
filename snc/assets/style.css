@@ -1,0 +1,331 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-medium.woff2") format("woff2"), url("../fonts/gilroy-medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-semi-bold.woff2") format("woff2"), url("../fonts/gilroy-semi-bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-bold.woff2") format("woff2"), url("../fonts/gilroy-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-bold.woff2") format("woff2"), url("../fonts/gilroy-bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-extra-bold.woff2") format("woff2"), url("../fonts/gilroy-extra-bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-black.woff2") format("woff2"), url("../fonts/gilroy-black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Gilroy", Century Gothic, sans-serif !important;
+    line-height: 1.6em;
+    color: #000000;
+    margin: 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.cognito label, .cognito legend {
+    font-size: 14px !important;
+    color: #000000;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #000000 !important;
+}
+
+select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+    background-color: #FFFFFF;
+    border: 1px solid #A6A7AA;
+    height: 40px;
+    line-height: 100%;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+    display: inline-block;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    vertical-align: middle;
+}
+
+button, input {
+    *overflow: visible;
+    line-height: normal;
+}
+button, input, select, textarea {
+    margin: 0;
+    /* font-size: 100%; */
+    vertical-align: middle;
+}
+input, textarea, .uneditable-input {
+    width: 206px;
+}
+input, button, select, textarea {
+    font-family: "Gilroy", Century Gothic, sans-serif;
+}
+
+select, button, input[type=button], input[type=reset], input[type=submit], input[type=radio], input[type=checkbox] {
+    cursor: pointer;
+}
+input[type=checkbox] {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    margin-right: 0.5em;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: initial !important;
+    margin: 0 0.5em 0 0 !important;
+}
+
+input[type=file], input[type=image], input[type=submit], input[type=reset], input[type=button], input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+input[type=radio], input[type=checkbox] {
+    margin: 4px 0 0;
+    *margin-top: 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+.cognito input, .cognito select {
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.cognito * {
+    box-sizing: border-box;
+}
+
+.btn-alpha, .btn-cart, #c-submit-button {
+    display: flex;
+    font-family: "Gilroy", Century Gothic, sans-serif;
+    font-size: 0.875rem;
+    color: #000000;
+    background-color: #86ed78;
+    padding: 0.625rem 0.625rem 0.625rem 1.5rem;
+    margin: 0;
+    transition: all 0.2s ease-out;
+    border: 1px solid #86ed78;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+    width: fit-content;
+    width: max-content;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    align-items: center;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.cognito #c-submit-button {
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.btn-alpha, .btn-cart, #c-submit-button {
+    display: flex;
+    font-family: "Gilroy", Century Gothic, sans-serif;
+    font-size: 0.875rem;
+    color: #000000;
+    background-color: #86ed78;
+    padding: 0.625rem 0.625rem 0.625rem 1.5rem;
+    margin: 0;
+    transition: all 0.2s ease-out;
+    border: 1px solid #86ed78;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+    width: fit-content;
+    width: max-content;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    align-items: center;
+}
+.cognito .c-button {
+    margin: 8px 8px 8px;
+}
+.cognito * {
+    box-sizing: border-box;
+}
+select, button, input[type=button], input[type=reset], input[type=submit], input[type=radio], input[type=checkbox] {
+    cursor: pointer;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, input {
+    *overflow: visible;
+    line-height: normal;
+}
+button, input, select, textarea {
+    margin: 0;
+    /* font-size: 100%; */
+    vertical-align: middle;
+}
+input, button, select, textarea {
+    font-family: "Gilroy", Century Gothic, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.c-forms-form {
+    overflow: visible;
+    line-height: 1.3em;
+    position: relative;
+}
+.cognito:not(.c-forms-actionBar) {
+    margin: 0 auto;
+    text-align: left;
+}
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Gilroy", Century Gothic, sans-serif !important;
+    line-height: 1.6em;
+    color: #000000;
+    margin: 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.btn-alpha:after, .btn-cart:after, #c-submit-button:after {
+    content: url(../images/arrow.svg);
+    transition: all 0.2s ease-out;
+    margin-left: 1.125rem;
+    width: 40px;
+    align-self: flex-start;
+}
+
+.btn-alpha:hover:after, .btn-cart:hover:after, #c-submit-button:hover:after {
+    content: url(../images/arrowW.svg);
+    transition: all 0.2s ease-out;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    margin-right: 0.5em;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: initial !important;
+    margin: 0 0.5em 0 0 !important;
+}
+
+input[type=checkbox]:checked:after {
+    content: "✔";
+    font-size: 1em;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: #6B7885;
+}
+
+input[type=checkbox]:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #99a1a7;
+}
